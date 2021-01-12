@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    hsla(14, 90%, 73%, 1) 0%,
+    hsla(331, 54%, 44%, 1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.ui {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: rgb(189, 74, 113) solid;
+  font-size: 29px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+  background-color: rgb(223, 209, 214);
+}
+
+div:hover {
+  background-color: rgba(221, 198, 206, 0.801);
+}
+
+.red {
+  color: rgb(197, 52, 52);
+  font-size: 50px;
+}
+.blue {
+  font-size: 50px;
+  color: rgb(44, 93, 185);
+}
+
+.message {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0.904);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 24px;
+  display: none;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.text {
+  font-size: 40px;
+}
+
+.background {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(49, 49, 49, 0.959);
+  transition: all ease 0.5s;
+}
+
+.reset {
+  border: none;
+  height: 35px;
+  width: 120px;
+  display: block;
+  position: relative;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  background-color: rgb(50, 181, 185);
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  outline: none;
+}
+
+.display {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.redWins {
+  background-color: rgba(221, 74, 74, 0.897);
+}
+
+.blueWins {
+  background-color: rgba(73, 73, 247, 0.726);
+}
